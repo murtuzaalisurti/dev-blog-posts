@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  margin: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+label, input {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 16rem;
+  outline: none;
+  border: 1.5px solid black;
+  padding: 0.2rem 0.25rem;
+  border-radius: 0.3rem;
+}
+
+button {
+  outline: none;
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 0.2rem;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.post {
+  margin: 2rem 1rem 0 1rem;
+  width: 60%;
+  min-width: 250px;
+  max-width: 320px;
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.date {
+  margin-top: 0.2rem;
+  font-size: 0.6rem;
+  color: #3a3a3a;
+}
+
+.post-title, .post-desc {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.4rem 0.7rem 0 0.7rem;
+}
+
+.post-desc {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.post_image_contain {
+  width: 100%;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}
