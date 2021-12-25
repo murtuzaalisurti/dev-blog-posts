@@ -23,7 +23,11 @@ app.post('/', text_parser, (req, res) => {
         .then((response) => {
             return response.json()
         }).then((data) => {
-            res.send({blogs: data})
+            if(data.length > 0){
+                res.send({blogs: data})
+            } else {
+                res.send({blogs: []})
+            }
         }).catch((err) => {
             console.error(err);
         })
