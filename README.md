@@ -13,7 +13,7 @@ Step 2 :
 > Run `node index.js` to kickstart the development server in your local machine. That's it.
 
 ## API
-> We used the official Forem's [dev.to API](https://developers.forem.com/api/).
+> We have used the Forem's official [dev.to API](https://developers.forem.com/api/).
 
 ## Want to contribute?
 
