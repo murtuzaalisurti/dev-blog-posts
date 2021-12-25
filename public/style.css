@@ -127,6 +127,13 @@ a:hover {
   padding: 1rem 2rem;
   font-family: 'Poppins', sans-serif;
   font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .warn i {

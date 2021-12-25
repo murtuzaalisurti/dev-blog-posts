@@ -96,6 +96,8 @@ a:hover{
     padding: 1rem 2rem;
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
 }
 .warn i{
     font-size: 2.5rem;
