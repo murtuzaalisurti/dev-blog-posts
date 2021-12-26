@@ -8,12 +8,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    // position: relative;
 }
-h1{
+.title-contain{
     margin: 2rem 1rem;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+.title-contain p{
+    font-size: 0.8rem;
+    font-style: italic;
 }
 label, input{
     text-align: center;
@@ -35,9 +38,14 @@ button{
     padding: 0.2rem 0.4rem;
     font-family: 'Poppins', sans-serif;
     margin-left: 0.2rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 button:hover, a:hover{
     cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
 }
 a{
     color: black;
@@ -58,20 +66,27 @@ a:hover{
     width: 60%;
     min-width: 250px;
     max-width: 320px;
-    border: 3px solid black;
+    border: 2px solid #aeaeae;
     border-radius: 10px;
     overflow: hidden;
     height: 100%;
+    padding: 0.2rem;
+    background-color: black;
 }
 .date{
     margin-top: 0.2rem;
     font-size: 0.6rem;
     color: rgb(58, 58, 58);
 }
+.post-content{
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: white;
+}
 .post-title, .post-desc{
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
-    padding: 0.4rem 0.7rem 0 0.7rem;
+    padding: 0.4rem 0.6rem 0 0.6rem;
 }
 .post-desc{
     font-size: 0.8rem;

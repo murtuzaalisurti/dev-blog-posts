@@ -25,10 +25,10 @@ document.querySelector('button').addEventListener('click', () => {
                         }
                         let post = document.createElement('div');
                         post.setAttribute('class', 'post');
-                        post.innerHTML = `<div class="post_image_contain">${image()}</div>
+                        post.innerHTML = `<div class="post-content"><div class="post_image_contain">${image()}</div>
                 <div class="post-title"><a href="${blog_post.url}" target="_blank" rel="noreferrer">${blog_post.title}</a></div>
                 <div class="post-desc">${blog_post.description}<div>
-                <div class="date">${blog_post.readable_publish_date}</div>`;
+                <div class="date">${blog_post.readable_publish_date}</div></div>`;
                         document.querySelector('.contain').appendChild(post);
                     })
                 }
