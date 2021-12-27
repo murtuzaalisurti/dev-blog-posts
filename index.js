@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.post('/', text_parser, (req, res) => {
     // console.log("Request body: "+util.inspect(req.body, false, null));
-    fetch(`https://dev.to/api/articles?api-key=${process.env.APIKEY}&username=${req.body}`)
+    fetch(`https://dev.to/api/articles?api-key=${process.env.APIKEY}&username=${req.body}&state=all`)
         .then((response) => {
             return response.json()
         }).then((data) => {

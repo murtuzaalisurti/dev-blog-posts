@@ -9,6 +9,23 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.loading{
+    margin-top: 4rem;
+}
+.loading i{
+    font-size: 3rem;
+    transform: rotate(0deg);
+    animation: load 1.2s ease-out infinite both;
+}
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
 .title-contain{
     margin: 2rem 1rem;
     font-family: 'Poppins', sans-serif;
@@ -75,7 +92,7 @@ a:hover{
 }
 .date{
     margin-top: 0.2rem;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     color: rgb(58, 58, 58);
 }
 .post-content{
@@ -88,6 +105,13 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     padding: 0.4rem 0.6rem 0 0.6rem;
 }
+.author{
+    padding: 0 0.6rem 0.2rem 0.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: #252525;
+    font-size: 0.55rem;
+    font-style: italic;
+}
 .post-desc{
     font-size: 0.8rem;
     font-style: italic;
@@ -99,6 +123,24 @@ a:hover{
 .post img{
     width: 100%;
     height: auto;
+}
+.post-meta{
+    margin-top: 0.15rem;
+}
+.post-meta, .reactions, .likes, .comments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.reactions, .likes, .comments{
+    justify-content: center;
+}
+.comments{
+    margin-left: 0.7rem;
+}
+.number_of_comments, .number_of_likes{
+    margin-left: 0.2rem;
 }
 .warn{
     text-align: center;
