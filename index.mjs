@@ -1,11 +1,17 @@
-const express = require('express');
-const dotenv = require('dotenv');
-const util = require('util');
-const body_parser = require('body-parser');
+import node from 'node:module';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+import express from 'express'
+import dotenv from 'dotenv';
+import util from 'util';
+import body_parser from 'body-parser';
+import fetch from 'node-fetch';
 const text_parser = body_parser.text();
 dotenv.config();
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
-const fetch = require('node-fetch');
+
 app.listen(process.env.PORT, () => {
     console.log("listening on port " + process.env.PORT);
 });
