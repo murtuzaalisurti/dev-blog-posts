@@ -132,7 +132,7 @@ a:hover {
   border: 2px solid #aeaeae;
   border-radius: 10px;
   overflow: hidden;
-  height: 100%;
+  height: auto;
   padding: 0.2rem;
   background-color: black;
 }
@@ -147,12 +147,24 @@ a:hover {
   overflow: hidden;
   border-radius: 5px;
   background-color: white;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .post-title, .post-desc {
   font-size: 1.1rem;
   font-family: 'Poppins', sans-serif;
   padding: 0.4rem 0.6rem 0 0.6rem;
+  margin-top: auto;
 }
 
 .author {

@@ -1,4 +1,14 @@
-document.querySelector('button').addEventListener('click', () => {
+document.querySelector('button').addEventListener('click', (e) => {
+    fetchPosts();
+})
+
+document.querySelector("#username").addEventListener('keydown', (e) => {
+    if(e.keyCode === 13 || e.key === "Enter"){
+        fetchPosts();
+    }
+})
+
+function fetchPosts(){
     let username = document.querySelector('#username').value;
     let container = document.querySelector('.contain');
     container.innerHTML = `<div class="loading"><i class="fas fa-spinner"></i></div>`;
@@ -19,7 +29,7 @@ document.querySelector('button').addEventListener('click', () => {
 
                 function display_posts() {
                     document.querySelector('.contain').classList.remove("warn");
-                    blog_posts.forEach((blog_post) => {
+                    blog_posts.forEach((blog_post, index) => {
 
                         let post = document.createElement('div');
                         post.setAttribute('class', 'post');
@@ -39,7 +49,9 @@ document.querySelector('button').addEventListener('click', () => {
                         let post_image_contain = document.createElement('div');
                         post_image_contain.setAttribute('class', 'post_image_contain');
                         let post_image = document.createElement('img');
-                        post_image.setAttribute('loading', 'lazy');
+                        if(index > 7){
+                            post_image.setAttribute('loading', 'lazy');
+                        }
                         post_image.src = image();
                         post_image_contain.appendChild(post_image);
                         post_content.appendChild(post_image_contain);
@@ -130,4 +142,4 @@ document.querySelector('button').addEventListener('click', () => {
         document.querySelector('.contain').classList.add("warn");
         document.querySelector('.contain').innerHTML = `<i class="fas fa-exclamation-circle"></i>Invalid Username`;
     }
-})
+}
